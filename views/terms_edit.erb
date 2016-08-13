@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <h1>Edit Glossary</h1>
+    <form action="/terms" method="post">
+      <input name="_method" value="put" type="hidden">
+      <ul>
+        <li>
+          <label for="category_id">Category ID</label>
+          <textarea name="category_id" rows="1" cols="50"></textarea>
+        </li>
+
+        <li>
+          <label for="name">Name</label>
+          <textarea name="name" rows="1" cols="50"></textarea>
+        </li>
+
+        <li>
+          <label for="definition">Definition</label>
+          <textarea name="definition" rows="4" cols="50"></textarea>
+        </li>
+
+        <li>
+          <label for="author">Author</label>
+          <textarea name="author" rows="1" cols="50"></textarea>
+        </li>
+
+        <li>
+          <label for="resource">Resource</label>
+          <textarea name="resource" rows="1" cols="50"></textarea>
+        </li>
+
+        <li>
+          <input type="submit" value="Edit Term &#128515;">
+        </li>
+      </ul>
+
+      <form action="/terms_edit/<%= @term.id %>" method="post">
+        <input type="submit" value="Edit <%= @term.name %>">
+      </form>
+    </form>
+  </body>
+</html>

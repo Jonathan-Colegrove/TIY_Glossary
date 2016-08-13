@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TIY Glossary</title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+  <h1>Most Recent Terms</h1>
+    <% @terms.each do |term| %>
+      <a href="/terms/<%= term.id %>"><%= term.name %></a>
+      <br>
+    <% end %>
+
+    <br>
+
+    <a href="/terms">List of Terms (sorted by name)</a>
+    <a href="/categories">List of Categories</a>
+
+    <br>
+    <button><a href="/terms/new">Add a Term</a></button>
+  </body>
+</html>

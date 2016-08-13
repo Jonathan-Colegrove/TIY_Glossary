@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Terms: <%= @term.name %></title>
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body>
+    <h2>Name: </h2><%= @term.name %>
+    <h2>Definition: </h2><%= @term.definition %>
+    <h2>Author: </h2><%= @term.author %>
+    <h2>Resource: </h2><a href="<%= @term.resource %>"><%= @term.resource %></a>
+
+    <br>
+    <br>
+    <br>
+    <!-- <a href="/terms_edit/<%= @term.id %>">Edit <%= @term.name %></a> -->
+    <a href="/terms/<%= @term.id %>/terms_edit">Edit <%= @term.name %></a>
+
+    <!-- <form action="/terms_edit/<%= @term.id %>" method="post">
+      <input type="submit" value="Edit <%= @term.name %>">
+    </form> -->
+  </body>
+</html>

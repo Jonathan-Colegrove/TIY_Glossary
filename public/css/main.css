@@ -1,0 +1,17 @@
+body {
+  background-image: url("/images/over_grass.jpg");
+  background-size: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+label{
+    display:inline-block;
+    width:100px;
+}
+
+/*have a background of a sunrise
+and a border of grass on bottom & jungle vines up tree on sides
+maybe have animation which pops it up when 1st load*/
