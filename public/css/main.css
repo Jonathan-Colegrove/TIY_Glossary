@@ -12,6 +12,23 @@ label{
     width:100px;
 }
 
+button {
+  background-color: Transparent;
+  border-radius: 15px;
+  border: 2px solid #228B22;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button:hover {
+  background-color: #228B22;
+}
+
+
+
 /*have a background of a sunrise
 and a border of grass on bottom & jungle vines up tree on sides
 maybe have animation which pops it up when 1st load*/

@@ -2,15 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Category: <%= @category.name %></title>
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <h1>Terms</h1>
-    <% @terms.each do |term| %>
-      <a href="/terms/<%= term.id %>"><%= term.name %></a>
-      <br>
-    <% end %>
+    <h2>Name: </h2><%= @category.name %>
+    <h2>Subject: </h2><%= @category.subject %>
+
     <br>
     <br>
     <br>

@@ -14,10 +14,24 @@
 
     <br>
 
-    <a href="/terms">List of Terms (sorted by name)</a>
-    <a href="/categories">List of Categories</a>
+    <button><a href="/terms">List of Terms (sorted by name)</a></button>
+    <button><a href="/categories">List of Categories</a></button>
 
     <br>
+    <br>
+
+    <button>
+      <form action="/terms/search" method="post">
+        <input type="text" name="name">
+        <input type="submit">
+        <img src="/images/search.png" alt="Search" />
+      </form>
+    </button>
+    <button><a href="/">Take me <img src="/images/home.png" alt="Home" /></a></button>
+
+    <br>
+
     <button><a href="/terms/new">Add a Term</a></button>
+    <button><a href="/categories/new">Add a Category</a></button>
   </body>
 </html>

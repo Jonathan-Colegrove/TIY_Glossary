@@ -7,5 +7,13 @@
   </head>
   <body>
     <h1>Categories</h1>
+    <% @categories.each do |category| %>
+      <a href="/categories/<%= category.id %>"><%= category.name %></a>
+      <br>
+    <% end %>
+    <br>
+    <br>
+    <br>
+    <button><a href="/">Take me Home</a></button>
   </body>
 </html>
