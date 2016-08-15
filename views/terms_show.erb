@@ -1,29 +1,18 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Terms: <%= @term.name %></title>
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
-    <h1>Our &spades;Awesome&spades; Glossary</h1>
-    <button><a href="/">Take me <img src="/images/home.png" alt="Home" /></a></button>
-    <br>
-    <h2>Name: </h2> <%= @term.name %><br>
-    <h2>Definition: </h2> <%= @term.definition %><br>
-    <h2>Author: </h2> <%= @term.author %><br>
-    <h2>Resource: </h2> <a href="<%= @term.resource %>"><%= @term.resource %></a>
+<button><a href="/">Take me <img src="/images/home.png" alt="Home" /></a></button>
+<br>
+<h2>Name: </h2> <%= @term.name %><br>
+<h2>Definition: </h2> <%= @term.definition %><br>
+<h2>Author: </h2> <%= @term.author %><br>
+<h2>Resource: </h2> <a href="<%= @term.resource %>"><%= @term.resource %></a>
 
-    <br><br>
-    <footer>
-      <button><a href="/terms/<%= @term.id %>/edit">Edit <%= @term.name %></a></button>
-      <button>
-        <form action="/terms/<%= @term.id %>" method="post">
-        <input name="_method" value="delete" type="hidden">
-        <input type="submit" value="&#9760 Delete Term &#9760;">
-        </form>
-      </button>
-      <div style="width: 60vw"></div>
-    </footer>
-  </body>
-</html>
+<br><br>
+<footer>
+  <button><a href="/terms/<%= @term.id %>/edit">Edit <%= @term.name %></a></button>
+  <button>
+    <form action="/terms/<%= @term.id %>" method="post">
+    <input name="_method" value="delete" type="hidden">
+    <input type="submit" value="&#9760 Delete Term &#9760;">
+    </form>
+  </button>
+  <div style="width: 60vw"></div>
+</footer>

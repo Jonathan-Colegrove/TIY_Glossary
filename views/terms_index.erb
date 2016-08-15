@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
-    <h1>Terms</h1>
-    <button><a href="/">Take me <img src="/images/home.png" alt="Home" /></a></button>
-
-    <% @terms.each do |term| %>
-      <a href="/terms/<%= term.id %>"><%= term.name %></a>
-      <br>
-    <% end %>
-    <br>
-    <br>
-    <br>
-    <button><a href="/">Take me Home</a></button>
-  </body>
-</html>
+<div class="in-line">
+  <h1>Terms</h1>
+  <button><a href="/">Take me <img src="/images/home.png" alt="Home" /></a></button>
+</div>
+<br>
+<div class="most_recent">
+<% @terms.each do |term| %>
+  <a href="/terms/<%= term.id %>"><%= term.name %></a>
+  <br>
+<% end %>
+</div>

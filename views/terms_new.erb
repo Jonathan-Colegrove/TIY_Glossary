@@ -1,45 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
-    <h1>Add to our &spades;Awesome&spades; Glossary</h1>
-    <button><a href="/">Take me <img src="/images/home.png" alt="Home" /></a></button>
+<h1>Add a Term</h1>
+<button><a href="/">Take me <img src="/images/home.png" alt="Home" /></a></button>
 
-    <form action="/terms" method="post">
-      <ul>
-        <li>
-          <label for="category_id">Category ID</label>
-          <textarea name="category_id" rows="1" cols="50"></textarea>
-        </li>
+<form action="/terms" method="post">
+  <ul>
+    <li>
+      <label for="category_id">Category ID</label>
+      <textarea name="category_id" rows="1" cols="50"></textarea>
+    </li>
 
-        <li>
-          <label for="name">Name</label>
-          <textarea name="name" rows="1" cols="50"></textarea>
-        </li>
+    <li>
+      <label for="name">Name</label>
+      <textarea name="name" rows="1" cols="50"></textarea>
+    </li>
 
-        <li>
-          <label for="definition">Definition</label>
-          <textarea name="definition" rows="4" cols="50"></textarea>
-        </li>
+    <li>
+      <label for="definition">Definition</label>
+      <textarea name="definition" rows="4" cols="50"></textarea>
+    </li>
 
-        <li>
-          <label for="author">Author</label>
-          <textarea name="author" rows="1" cols="50"></textarea>
-        </li>
+    <li>
+      <label for="author">Author</label>
+      <textarea name="author" rows="1" cols="50"></textarea>
+    </li>
 
-        <li>
-          <label for="resource">Resource</label>
-          <textarea name="resource" rows="1" cols="50"></textarea>
-        </li>
+    <li>
+      <label for="resource">Resource</label>
+      <textarea name="resource" rows="1" cols="50"></textarea>
+    </li>
 
-        <li>
-          <input type="submit" value="Add Term &#128515;">
-        </li>
-      </ul>
-    </form>
-  </body>
-</html>
+    <li>
+      <input type="submit" value="Add Term &#128515;">
+    </li>
+  </ul>
+</form>

@@ -12,6 +12,36 @@ header {
   margin-left: 2em;
 }
 
+.right_nav {
+  display: flex;
+  align-items: flex-start;
+}
+
+header input {
+  padding: 0;
+  line-height: 22px;
+  vertical-align: middle;
+}
+
+header input[type=text] {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+::-webkit-input-placeholder {
+  color: #228B22;
+}
+:-ms-input-placeholder {
+  color: #228B22;
+}
+::-moz-placeholder {
+  color: #228B22;
+}
+:-moz-placeholder {
+  color: #228B22;
+}
+
 footer {
   display: flex;
   justify-content: space-around;
@@ -19,6 +49,7 @@ footer {
 
 footer input {
   background-color: transparent;
+  border: none;
 }
 
 h1 {
@@ -28,6 +59,11 @@ h1 {
 
 h2 {
   display: inline-block;
+}
+
+.in-line h1 {
+  display: inline-block;
+  margin-right: 2em;
 }
 
 ul {
@@ -40,7 +76,7 @@ label{
 }
 
 button {
-  background-color: Transparent;
+  background-color: #7FFF00;
   border-radius: 15px;
   border: 2px solid #228B22;
 }

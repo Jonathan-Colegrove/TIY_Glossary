@@ -1,58 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>TIY Glossary</title>
-    <link rel="stylesheet" href="/css/main.css">
-  </head>
-  <body>
-    <header>
-      <h1>Our &spades;Awesome&spades; Glossary</h1>
-      <div class="right_nav">
-        <button>
-          <a href="/terms">
-            <img src="/images/t.png" />
-            <img src="/images/e.png" />
-            <img src="/images/r.png" />
-            <img src="/images/m.png" />
-            <img src="/images/s.png" />
-          </a>
-        </button>
+<h1>Most Recent Terms</h1>
 
-        <button>
-          <a href="/categories">
-            <img src="/images/c.png" />
-            <img src="/images/a.png" />
-            <img src="/images/t.png" />
-            <img src="/images/e.png" />
-            <img src="/images/g.png" />
-            <img src="/images/o.png" />
-            <img src="/images/r.png" />
-            <img src="/images/i.png" />
-            <img src="/images/e.png" />
-            <img src="/images/s.png" />
-          </a>
-        </button>
+<div class="most_recent">
+<% @terms.each do |term| %>
+  <a href="/terms/<%= term.id %>"><%= term.name %></a>
+  <br>
+<% end %>
+</div>
+<br>
 
-        <button>
-          <form action="/terms/search" method="post">
-            <input type="text" name="name" placeholder="Search...">
-            <input type="image" src="/images/search.png" />
-          </form>
-        </button>
-      </div>
-    </header>
-    <h2>Most Recent Terms</h2>
-
-    <div class="most_recent">
-    <% @terms.each do |term| %>
-      <a href="/terms/<%= term.id %>"><%= term.name %></a>
-      <br>
-    <% end %>
-    </div>
-    <br>
-
-    <button><a href="/terms/new">Add a Term</a></button>
-    <button><a href="/categories/new">Add a Category</a></button>
-  </body>
-</html>
+<button><a href="/terms/new">Add a Term</a></button>
+<button><a href="/categories/new">Add a Category</a></button>
