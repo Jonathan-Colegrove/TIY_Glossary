@@ -1,10 +1,10 @@
-require 'sqlite3'
+require 'pg'
 require 'active_record'
 
 # ActiveRecord::Base.logger = Logger.new(STDOUT)
 ActiveRecord::Base.establish_connection(
-  adapter: "sqlite3",
-  database: "glossary.db"
+  adapter: "postgresql",
+  database: "glossary"
 )
 
 # use Rack::Flash
