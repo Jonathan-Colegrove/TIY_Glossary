@@ -3,6 +3,33 @@ body {
   background-size: cover;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.most_recent {
+  margin-left: 2em;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer input {
+  background-color: transparent;
+}
+
+h1 {
+  color: #228B22;
+  text-shadow: 2px 2px white;
+}
+
+h2 {
+  display: inline-block;
+}
+
 ul {
   list-style: none;
 }

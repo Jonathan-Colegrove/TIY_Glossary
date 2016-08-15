@@ -7,6 +7,8 @@
   </head>
   <body>
     <h1>Terms</h1>
+    <button><a href="/">Take me <img src="/images/home.png" alt="Home" /></a></button>
+
     <% @terms.each do |term| %>
       <a href="/terms/<%= term.id %>"><%= term.name %></a>
       <br>

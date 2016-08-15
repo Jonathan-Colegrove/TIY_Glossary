@@ -7,6 +7,8 @@
   </head>
   <body>
     <h1>Edit <%= @term.name %></h1>
+    <button><a href="/">Take me <img src="/images/home.png" alt="Home" /></a></button>
+    <br>
     <form action="/terms/<%= @term.id %>" method="post">
       <input name="_method" value="put" type="hidden">
       <ul>
