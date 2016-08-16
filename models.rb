@@ -11,6 +11,7 @@ else
   adapter: "postgresql",
   database: "glossary"
 )
+end
 
 # use Rack::Flash
 class Term < ActiveRecord::Base
